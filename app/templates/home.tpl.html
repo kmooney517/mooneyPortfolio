@@ -2,7 +2,7 @@
 
   <div class="landing">
     <div class="front">
-      <img src="../images/words.png">
+      <img ng-src="../images/words.png">
     </div>
 
     <div class="downButton" ng-click="vm.scrollDown()">
@@ -19,20 +19,39 @@
 
 
   <div class="tiles">
-    <div class="skills" ng-click="vm.showSkills()">
-    <p>Skills</p>
-    </div>
-    <div class="projects" ng-click="vm.showProjects()">
-      <p>Current Projects</p>
-    </div>
-    <div class="resume" ng-click="vm.showResume()">
-      <p>Resume</p>
-    </div>
+ 
+    <a href="#/skills"><div class="image-wrapper overlay-fade-in">
+      <p class="title">Tools</p>
+      <img src="../images/html-css-js-logos.png" />
+      <div class="image-overlay-content">
+        <a href="#/skills">Show Current Toolkit</a>
+      </div>
+    </div></a>
+
+    <a href="#/projects"><div class="image-wrapper overlay-fade-in">
+      <p class="title">Current Projects</p>
+      <img class="currentProjects" src="../images/projectThumbs.png" />
+      <div class="image-overlay-content">
+        <a class="projectLink" href="#/projects">Show Current Projects</a>
+      </div>
+    </div></a>
+
+    <a href="#/resume"><div class="image-wrapper overlay-fade-in">
+      <p class="title">Resume</p>
+      <img class ="showResume"src="../images/fakeResume2.png" />
+      <div class="image-overlay-content">
+        <a href="#/resume">Show Current Resume</a>
+      </div>
+    </div></a>
+
   </div>
+
 
   <div class="upButton" ng-click="vm.scrollUp()">
     <i class="fa fa-angle-double-up fa-3x bounce"></i>
   </div>
+
+
 
   <div class="footer">
     <div class="footerLeft">
@@ -47,4 +66,13 @@
       </ul>
     </div>
   </div>
+
+
+
+
+
+
+
+
+
 </div>

@@ -33,7 +33,8 @@ let HomeController = function($scope, $location, $anchorScroll, $rootScope, $sta
   function showResume () {
     $state.go('root.resume');
   }
-  
+
+
 };
 
 

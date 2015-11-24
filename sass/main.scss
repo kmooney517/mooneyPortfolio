@@ -132,40 +132,21 @@
   }
 }
 
-.tiles{
+.tiles {
   width: 95%;
   margin: 2% auto;
+  position: relative;
   div{
     background: #333333;
     display: inline-block;
     border: 1px solid black;
     width: 33%;
     height: 20em;
-    color: white;
-    text-align: center;
-    font-family: 'Architects Daughter', cursive;
-  }
-  p{
-    font-size: 2em;
-    position: relative;
-    top: 45%;
   }
 }
 
-.tiles{
-  .skills:hover{
-    color: #8AADAC;
-    background: darken( #333333, 30% );
-  }
-  .projects:hover{
-    color: #8AADAC;
-    background: darken( #333333, 30% );
-  }
-  .resume:hover{
-    color: #8AADAC;
-    background: darken( #333333, 30% );
-  }
-}
+
+
 
 @media only screen and (max-width: 1120px) {
     /* For mobile phones: */
@@ -239,4 +220,61 @@
  60% {transform: translateY(-5px);}
 }
 
- 
+.image-wrapper {
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  p{
+    font-family: 'Architects Daughter', cursive;
+    margin-bottom: 1%;
+  }
+  img{
+    max-width: 100%;
+    max-height: 70%;
+  }
+  a{
+    text-decoration: none;
+    color: white;
+    &:hover{
+      color: #8AADAC;
+    }
+  }
+  .currentProjects{
+    padding: 1em;
+  }
+  .showResume{
+    padding: 1em;
+  }
+}
+
+.overlay-fade-in {  
+  p {
+    color: white;
+    font-size: 1.5em;
+  }
+  .image-overlay-content {
+    border: none;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+  }
+  &:hover .image-overlay-content{
+    height: 100%;
+    opacity: 1;
+  }
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

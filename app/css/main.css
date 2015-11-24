@@ -8498,32 +8498,14 @@ th.hide-for-touch {
 
 .tiles {
   width: 95%;
-  margin: 2% auto; }
+  margin: 2% auto;
+  position: relative; }
   .tiles div {
     background: #333333;
     display: inline-block;
     border: 1px solid black;
     width: 33%;
-    height: 20em;
-    color: white;
-    text-align: center;
-    font-family: 'Architects Daughter', cursive; }
-  .tiles p {
-    font-size: 2em;
-    position: relative;
-    top: 45%; }
-
-.tiles .skills:hover {
-  color: #8AADAC;
-  background: black; }
-
-.tiles .projects:hover {
-  color: #8AADAC;
-  background: black; }
-
-.tiles .resume:hover {
-  color: #8AADAC;
-  background: black; }
+    height: 20em; }
 
 @media only screen and (max-width: 1120px) {
   /* For mobile phones: */
@@ -8594,5 +8576,38 @@ th.hide-for-touch {
     transform: translateY(-10px); }
   60% {
     transform: translateY(-5px); } }
+
+.image-wrapper {
+  overflow: hidden;
+  position: relative;
+  text-align: center; }
+  .image-wrapper p {
+    font-family: 'Architects Daughter', cursive;
+    margin-bottom: 1%; }
+  .image-wrapper img {
+    max-width: 100%;
+    max-height: 70%; }
+  .image-wrapper a {
+    text-decoration: none;
+    color: white; }
+    .image-wrapper a:hover {
+      color: #8AADAC; }
+  .image-wrapper .currentProjects {
+    padding: 1em; }
+  .image-wrapper .showResume {
+    padding: 1em; }
+
+.overlay-fade-in p {
+  color: white;
+  font-size: 1.5em; }
+
+.overlay-fade-in .image-overlay-content {
+  border: none;
+  opacity: 0;
+  transition: all 0.4s ease-in-out; }
+
+.overlay-fade-in:hover .image-overlay-content {
+  height: 100%;
+  opacity: 1; }
 
 /*# sourceMappingURL=main.css.map */
