@@ -1,0 +1,50 @@
+<div class="homeTemplate" ng-app="app">
+
+  <div class="landing">
+    <div class="front">
+      <img src="../images/words.png">
+    </div>
+
+    <div class="downButton" ng-click="vm.scrollDown()">
+      <i class="fa fa-angle-double-down fa-3x bounce"></i>
+    </div>
+  </div>
+
+  <a id="bottom"></a><div class="about">
+    <h1>Explore Life</h1>
+    <p>I'm Kevin, a <span>front end web developer</span>, constantly looking for something new to explore.  When in front of a computer, I enjoy creating simple and functional web applications with HTML, CSS, and JS.  JavaScript is a living language that is in a constant state of evolution - the explorations are endless!</p>
+
+    <p class="non-code">While away from my computer, you can find me exploring the rivers and mountains of the southeast, playing a game of ultimate frisbee, or being snobby about a craft beer that you have never heard of.</p>
+  </div>
+
+
+  <div class="tiles">
+    <div class="skills" ng-click="vm.showSkills()">
+    <p>Skills</p>
+    </div>
+    <div class="projects" ng-click="vm.showProjects()">
+      <p>Current Projects</p>
+    </div>
+    <div class="resume" ng-click="vm.showResume()">
+      <p>Resume</p>
+    </div>
+  </div>
+
+  <div class="upButton" ng-click="vm.scrollUp()">
+    <i class="fa fa-angle-double-up fa-3x bounce"></i>
+  </div>
+
+  <div class="footer">
+    <div class="footerLeft">
+      <p> Kevin Mooney </p>
+    </div>
+    <div class="contact">
+      <ul>
+        <li><a href="https://github.com/kmooney517"><i class="fa fa-github-square fa-lg"></i></i></a></li>
+        <li><a href="mailto:kmooney517@gmail.com"><i class="fa fa-envelope-o fa-lg"></i></a></li>
+        <li><a href="https://twitter.com/kmooney0517"><i class="fa fa-twitter fa-lg"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/kmooney517"><i class="fa fa-linkedin-square fa-lg"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</div>

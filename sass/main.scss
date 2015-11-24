@@ -1,0 +1,242 @@
+@import 'foundation';
+@import 'font-awesome';
+
+@media all and (min-width: 960px) {
+  body{
+    font-size: 18px;
+  }
+}
+ 
+@media all and (max-width: 959px) and (min-width: 600px) {
+  body{
+    font-size: 16px;
+  }
+}
+ 
+@media all and (max-width: 599px) and (min-width: 320px) {
+  body{
+    font-size: 12px;
+  }
+}
+
+@media all and (width: 1120px) {
+  .tiles div{
+    display: block;
+  }
+}
+
+.fa-github-square:hover{
+  color: #A900DC;
+}
+.fa-envelope-o:hover{
+  color: #D54835;
+}
+.fa-twitter:hover{
+  color: #00FFFF;
+}
+.fa-linkedin-square:hover{
+  color: #007AB9;
+}
+
+.title-area li.name h1 a{
+  font-family: 'Architects Daughter', cursive;
+  color: white;
+  font-size: 1.4em;
+}
+
+.dropDown{
+  display: none;
+  text-align: center;
+  &.ng-scope{
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  li{
+    padding: 0;
+    background: #94BDBE;
+    list-style: none;
+    border-bottom: 1px solid white;
+  }
+  a{
+    text-decoration: none;
+    color: #333333;
+  }
+  i span{
+    padding-left: 15%;
+  }
+  .fa-chevron-up{
+    color: white;
+  }
+  .lastDrop{
+    border: none;
+  }
+}
+
+.shown{
+  display: block;
+}
+
+.title-area li.name h1 a:hover{
+  color: #8AADAC;
+}
+.contact{
+  font-family: 'Architects Daughter', cursive;
+}
+
+
+.landing{
+  background: #333333;
+  // margin-top: -6%;
+  margin-bottom: 0;
+  // img{
+  //   width: 100%;
+  //   opacity: 0.7;
+  // }
+  // .quote{
+  //   font-family: 'Architects Daughter', cursive;
+  //   font-size: 1.3em;
+  //   position: absolute;
+  //   top: 32%;
+  //   left: 10%;
+  //   color: white;
+  // }
+  .downButton{
+    .fa-angle-double-down{
+      color: white;
+      margin: 2% 50%;
+    }
+  }
+}
+
+.about{
+  margin-top: -5px;
+  text-align: center;
+  background: #8AADAC;
+  span{
+    color: white;
+    font-weight: bold;
+  }
+  h1{
+    padding-top: 5%;
+    font-family: 'Architects Daughter', cursive;
+  }
+  p{
+    font-size: 1.2em;
+    width: 65%;
+    margin: 2% auto;
+  }
+  .non-code{
+    padding-top: 2%;
+    padding-bottom: 5%;
+    border-top: 1px solid white;
+  }
+}
+
+.tiles{
+  width: 95%;
+  margin: 2% auto;
+  div{
+    background: #333333;
+    display: inline-block;
+    border: 1px solid black;
+    width: 33%;
+    height: 20em;
+    color: white;
+    text-align: center;
+    font-family: 'Architects Daughter', cursive;
+  }
+  p{
+    font-size: 2em;
+    position: relative;
+    top: 45%;
+  }
+}
+
+.tiles{
+  .skills:hover{
+    color: #8AADAC;
+    background: darken( #333333, 30% );
+  }
+  .projects:hover{
+    color: #8AADAC;
+    background: darken( #333333, 30% );
+  }
+  .resume:hover{
+    color: #8AADAC;
+    background: darken( #333333, 30% );
+  }
+}
+
+@media only screen and (max-width: 1120px) {
+    /* For mobile phones: */
+    .tiles div{
+        width: 100%;
+        height: 15em;
+    }
+}
+
+.footer {
+  height: 3.4em;
+  width: 100%;
+  color: white;
+  font-family: 'Architects Daughter', cursive;
+  background-color: #333333;
+  .footerLeft p{
+    padding-left: 3%;
+    float: left;
+    margin: 1em 0 0 0;
+    padding-bottom: 0;
+  }
+  .contact{
+    list-style: none;
+    ul{
+      float: right;
+      padding-right: 2%;
+    }
+    li{
+      display: inline-block;
+      margin-top: 1em;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+}
+
+.upButton{
+  .fa-angle-double-up{
+    color: #333333;
+    margin: 0 50%;
+  }
+}
+
+.bounce {
+ animation: bounce 2s infinite;
+ -webkit-animation: bounce 2s infinite;
+ -moz-animation: bounce 2s infinite;
+ -o-animation: bounce 2s infinite;
+}
+ 
+@-webkit-keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);} 
+ 40% {-webkit-transform: translateY(-10px);}
+ 60% {-webkit-transform: translateY(-5px);}
+}
+ 
+@-moz-keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+ 40% {-moz-transform: translateY(-10px);}
+ 60% {-moz-transform: translateY(-5px);}
+}
+ 
+@-o-keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+ 40% {-o-transform: translateY(-10px);}
+ 60% {-o-transform: translateY(-5px);}
+}
+@keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+ 40% {transform: translateY(-10px);}
+ 60% {transform: translateY(-5px);}
+}
+
+ 
