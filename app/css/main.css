@@ -8610,4 +8610,53 @@ th.hide-for-touch {
   height: 100%;
   opacity: 1; }
 
+.skillsTemplate {
+  background: #8AADAC;
+  width: 100%;
+  height: 100%; }
+  .skillsTemplate .boxImage {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 2em; }
+    .skillsTemplate .boxImage .toolkit {
+      padding: 2%;
+      width: 20%; }
+  .skillsTemplate .circles {
+    text-align: center;
+    margin-bottom: 1em; }
+    .skillsTemplate .circles p {
+      color: #333333;
+      font-size: 1.3em;
+      font-family: 'Architects Daughter', cursive; }
+  .skillsTemplate .circle {
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 17em;
+    height: 17em;
+    padding-bottom: 5%;
+    margin-bottom: 2%; }
+  .skillsTemplate .libraries img {
+    width: 12em;
+    height: 12em;
+    padding: 5%;
+    border-bottom: 1px solid white; }
+  .skillsTemplate .frameworks img {
+    width: 12em;
+    height: 12em;
+    padding: 5%;
+    border-bottom: 1px solid white; }
+  .skillsTemplate .styling img {
+    width: 12em;
+    height: 12em;
+    padding: 5%;
+    border-bottom: 1px solid white; }
+  .skillsTemplate .misc img {
+    width: 12em;
+    height: 12em;
+    padding: 5%;
+    border-bottom: 1px solid white; }
+
 /*# sourceMappingURL=main.css.map */

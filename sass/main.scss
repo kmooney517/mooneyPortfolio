@@ -264,6 +264,74 @@
 } 
 
 
+.skillsTemplate{
+  background: #8AADAC;
+  width: 100%;
+  height: 100%;
+  .boxImage{
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 2em;
+    .toolkit{
+      padding: 2%;
+      width: 20%;
+    }
+  }
+  .circles{
+    text-align: center;
+    margin-bottom: 1em;
+    p{
+      color: #333333;
+      font-size: 1.3em;
+      font-family: 'Architects Daughter', cursive;
+    }
+  }
+  .circle{
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 17em;
+    height: 17em;
+    padding-bottom: 5%;
+    margin-bottom: 2%;
+  }
+  .libraries {
+    img{
+      width: 12em;
+      height: 12em;
+      padding: 5%;
+      border-bottom: 1px solid white;
+    }
+  }
+  .frameworks {
+    img{
+      width: 12em;
+      height: 12em;
+      padding: 5%;
+      border-bottom: 1px solid white;
+    }
+  }
+  .styling {
+    img{
+      width: 12em;
+      height: 12em;
+      padding: 5%;
+      border-bottom: 1px solid white;
+    }
+  }
+  .misc {
+    img{
+      width: 12em;
+      height: 12em;
+      padding: 5%;
+      border-bottom: 1px solid white;
+    }
+  }
+}
+
+
 
 
 
