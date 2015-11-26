@@ -15,7 +15,7 @@ let config = function($stateProvider, $urlRouterProvider) {
     })
     .state('root.skills', {
       url: '/skills',
-      controller: 'SkillsControllers as vm',
+      controller: 'SkillsController as vm',
       templateUrl: 'templates/skills.tpl.html',
     })
     .state('root.projects', {

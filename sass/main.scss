@@ -287,6 +287,13 @@
       font-size: 1.3em;
       font-family: 'Architects Daughter', cursive;
     }
+    .back p{
+      color: white;
+      font-size: 1em;
+      width: 70%;
+      margin-top: 14%;
+      margin-left: 16%;
+    }
   }
   .circle{
     display: inline-block;
@@ -296,6 +303,9 @@
     height: 17em;
     padding-bottom: 5%;
     margin-bottom: 2%;
+    &:hover{
+      border: 1px solid #333333;
+    }
   }
   .libraries {
     img{
@@ -330,6 +340,97 @@
     }
   }
 }
+
+.flip {
+  -webkit-perspective: 800;
+    position: relative;
+    margin: 50px auto;
+}
+.flip .card.flipped {
+  -webkit-transform: rotatey(-180deg);
+}
+.flip .card {
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: 1s;
+}
+.flip .card .face {
+  -webkit-backface-visibility: hidden ;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+
+}
+.flip .card .front {
+  position: absolute;
+  z-index: 1;
+    cursor: pointer;
+}
+.flip .card .back {
+  -webkit-transform: rotatey(-180deg);
+  cursor: pointer;
+}
+
+.backHome{
+  text-align: center;
+  font-size: 2em;
+  margin: 2%;
+  .fa-long-arrow-left{
+    color: #333333;
+    &:hover{
+      color: white;
+    }
+  }
+}
+
+@media all and (max-width: 1115px) and (min-width: 320px) {
+  .projectsTemplate{
+    text-align: center;    
+  }
+}
+
+.projectsTemplate{
+  background: #8AADAC;
+  color: #333333;
+  font-family: 'Architects Daughter', cursive;
+  .title{
+    text-align: center;
+    font-size: 2em;
+    padding: 2%;
+  }
+  img{
+    margin: 1%;
+    width: 20em;
+    height: 15em;
+    border-radius: 5%;
+    vertical-align: top;
+  }
+  .project{
+    width: 100%;
+    margin: 0 auto;
+    border-top: 1px solid white;
+    padding-bottom: 2em;
+  }
+  .projectTile{
+    display: inline-block;
+  }
+  .description{
+    width: 65%;
+    h3{
+      width: 100%;
+      text-align: center;
+      color: #333333;
+      font-family: 'Architects Daughter', cursive;
+    }
+  }
+  .backHome{
+    margin-bottom: 0;
+  }
+
+}
+
 
 
 

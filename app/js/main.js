@@ -18,7 +18,7 @@ var config = function config($stateProvider, $urlRouterProvider) {
     templateUrl: 'templates/home.tpl.html'
   }).state('root.skills', {
     url: '/skills',
-    controller: 'SkillsControllers as vm',
+    controller: 'SkillsController as vm',
     templateUrl: 'templates/skills.tpl.html'
   }).state('root.projects', {
     url: '/projects',
@@ -89,7 +89,35 @@ HomeController.$inject = ['$scope', '$location', '$anchorScroll', '$rootScope', 
 exports['default'] = HomeController;
 module.exports = exports['default'];
 
-},{"jQuery":7}],3:[function(require,module,exports){
+},{"jQuery":8}],3:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, '__esModule', {
+  value: true
+});
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+var _jQuery = require('jQuery');
+
+var _jQuery2 = _interopRequireDefault(_jQuery);
+
+var SkillsController = function SkillsController($scope) {
+
+  (0, _jQuery2['default'])('.flip').click(function () {
+    (0, _jQuery2['default'])(this).find('.card').addClass('flipped').mouseleave(function () {
+      (0, _jQuery2['default'])(this).removeClass('flipped');
+    });
+    return false;
+  });
+};
+
+SkillsController.$inject = ['$scope'];
+
+exports['default'] = SkillsController;
+module.exports = exports['default'];
+
+},{"jQuery":8}],4:[function(require,module,exports){
 'use strict';
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
@@ -112,9 +140,13 @@ var _controllersHomeController = require('./controllers/homeController');
 
 var _controllersHomeController2 = _interopRequireDefault(_controllersHomeController);
 
-_angular2['default'].module('app', ['ui.router']).config(_config2['default']).controller('HomeController', _controllersHomeController2['default']);
+var _controllersSkillsController = require('./controllers/skillsController');
 
-},{"./config":1,"./controllers/homeController":2,"angular":6,"angular-ui-router":4,"jQuery":7}],4:[function(require,module,exports){
+var _controllersSkillsController2 = _interopRequireDefault(_controllersSkillsController);
+
+_angular2['default'].module('app', ['ui.router']).config(_config2['default']).controller('HomeController', _controllersHomeController2['default']).controller('SkillsController', _controllersSkillsController2['default']);
+
+},{"./config":1,"./controllers/homeController":2,"./controllers/skillsController":3,"angular":7,"angular-ui-router":5,"jQuery":8}],5:[function(require,module,exports){
 /**
  * State-based routing for AngularJS
  * @version v0.2.15
@@ -4485,7 +4517,7 @@ angular.module('ui.router.state')
   .filter('isState', $IsStateFilter)
   .filter('includedByState', $IncludedByStateFilter);
 })(window, window.angular);
-},{}],5:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 /**
  * @license AngularJS v1.4.8
  * (c) 2010-2015 Google, Inc. http://angularjs.org
@@ -33504,11 +33536,11 @@ $provide.value("$locale", {
 })(window, document);
 
 !window.angular.$$csp().noInlineStyle && window.angular.element(document.head).prepend('<style type="text/css">@charset "UTF-8";[ng\\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>');
-},{}],6:[function(require,module,exports){
+},{}],7:[function(require,module,exports){
 require('./angular');
 module.exports = angular;
 
-},{"./angular":5}],7:[function(require,module,exports){
+},{"./angular":6}],8:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v2.1.4
  * http://jquery.com/
@@ -42720,7 +42752,7 @@ return jQuery;
 
 }));
 
-},{}]},{},[3])
+},{}]},{},[4])
 
 
 //# sourceMappingURL=main.js.map

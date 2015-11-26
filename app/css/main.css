@@ -8630,6 +8630,12 @@ th.hide-for-touch {
       color: #333333;
       font-size: 1.3em;
       font-family: 'Architects Daughter', cursive; }
+    .skillsTemplate .circles .back p {
+      color: white;
+      font-size: 1em;
+      width: 70%;
+      margin-top: 14%;
+      margin-left: 16%; }
   .skillsTemplate .circle {
     display: inline-block;
     border: 1px solid white;
@@ -8638,6 +8644,8 @@ th.hide-for-touch {
     height: 17em;
     padding-bottom: 5%;
     margin-bottom: 2%; }
+    .skillsTemplate .circle:hover {
+      border: 1px solid #333333; }
   .skillsTemplate .libraries img {
     width: 12em;
     height: 12em;
@@ -8658,5 +8666,79 @@ th.hide-for-touch {
     height: 12em;
     padding: 5%;
     border-bottom: 1px solid white; }
+
+.flip {
+  -webkit-perspective: 800;
+  position: relative;
+  margin: 50px auto; }
+
+.flip .card.flipped {
+  -webkit-transform: rotatey(-180deg); }
+
+.flip .card {
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: 1s; }
+
+.flip .card .face {
+  -webkit-backface-visibility: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2; }
+
+.flip .card .front {
+  position: absolute;
+  z-index: 1;
+  cursor: pointer; }
+
+.flip .card .back {
+  -webkit-transform: rotatey(-180deg);
+  cursor: pointer; }
+
+.backHome {
+  text-align: center;
+  font-size: 2em;
+  margin: 2%; }
+  .backHome .fa-long-arrow-left {
+    color: #333333; }
+    .backHome .fa-long-arrow-left:hover {
+      color: white; }
+
+@media all and (max-width: 1115px) and (min-width: 320px) {
+  .projectsTemplate {
+    text-align: center; } }
+
+.projectsTemplate {
+  background: #8AADAC;
+  color: #333333;
+  font-family: 'Architects Daughter', cursive; }
+  .projectsTemplate .title {
+    text-align: center;
+    font-size: 2em;
+    padding: 2%; }
+  .projectsTemplate img {
+    margin: 1%;
+    width: 20em;
+    height: 15em;
+    border-radius: 5%;
+    vertical-align: top; }
+  .projectsTemplate .project {
+    width: 100%;
+    margin: 0 auto;
+    border-top: 1px solid white;
+    padding-bottom: 2em; }
+  .projectsTemplate .projectTile {
+    display: inline-block; }
+  .projectsTemplate .description {
+    width: 65%; }
+    .projectsTemplate .description h3 {
+      width: 100%;
+      text-align: center;
+      color: #333333;
+      font-family: 'Architects Daughter', cursive; }
+  .projectsTemplate .backHome {
+    margin-bottom: 0; }
 
 /*# sourceMappingURL=main.css.map */
