@@ -8741,4 +8741,73 @@ th.hide-for-touch {
   .projectsTemplate .backHome {
     margin-bottom: 0; }
 
+.resume {
+  background: #8AADAC; }
+
+.accordion {
+  width: 80%;
+  background: #8AADAC;
+  padding-top: 2%;
+  margin: 0 0 8% 5%; }
+  .accordion h2 {
+    margin-left: 5%;
+    width: 80%;
+    text-align: center;
+    font-size: 1.4em; }
+  .accordion span.ng-scope {
+    color: #333333;
+    font-size: 1.3em;
+    font-family: 'Architects Daughter', cursive; }
+  .accordion ul {
+    list-style: none;
+    display: inline-block;
+    padding-right: 4em; }
+
+.contactInfo2 {
+  display: none;
+  width: 80%;
+  margin-left: 5%; }
+  .contactInfo2 a {
+    padding: 0;
+    width: 80%;
+    text-align: center;
+    color: #333333; }
+    .contactInfo2 a:hover {
+      color: white; }
+
+.contactMe {
+  float: right;
+  margin-right: 6%;
+  margin-top: 8%; }
+  .contactMe i {
+    padding-right: 1em; }
+  .contactMe ul {
+    list-style: none;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 3%; }
+  .contactMe a {
+    text-align: center;
+    text-decoration: none;
+    color: #333333; }
+    .contactMe a:hover {
+      color: white; }
+
+@media all and (max-width: 1115px) and (min-width: 320px) {
+  .contactMe {
+    display: none; }
+  .accordion {
+    width: 90%;
+    padding-top: 2%;
+    margin-left: 4%;
+    margin-right: 4%; }
+    .accordion h2 {
+      margin-left: 25%;
+      width: 50%;
+      font-size: 1.4em; }
+  .contactInfo2 {
+    display: block;
+    margin-left: 10%;
+    font-size: 1.4em; } }
+
 /*# sourceMappingURL=main.css.map */
