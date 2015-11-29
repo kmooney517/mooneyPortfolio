@@ -90,28 +90,20 @@ exports['default'] = HomeController;
 module.exports = exports['default'];
 
 },{"jQuery":10}],3:[function(require,module,exports){
-"use strict";
+'use strict';
 
-Object.defineProperty(exports, "__esModule", {
+Object.defineProperty(exports, '__esModule', {
   value: true
 });
 var ResumeController = function ResumeController($scope) {
 
   $scope.oneAtATime = true;
-
-  $scope.groups = [{
-    title: "Dynamic Group Header - 1",
-    content: "Dynamic Group Body - 1"
-  }, {
-    title: "Dynamic Group Header - 2",
-    content: "Dynamic Group Body - 2"
-  }];
 };
 
 ResumeController.$inject = ['$scope'];
 
-exports["default"] = ResumeController;
-module.exports = exports["default"];
+exports['default'] = ResumeController;
+module.exports = exports['default'];
 
 },{}],4:[function(require,module,exports){
 'use strict';
@@ -128,7 +120,7 @@ var _jQuery2 = _interopRequireDefault(_jQuery);
 
 var SkillsController = function SkillsController($scope) {
 
-  (0, _jQuery2['default'])('.flip').click(function () {
+  (0, _jQuery2['default'])('.flip').mouseenter(function () {
     (0, _jQuery2['default'])(this).find('.card').addClass('flipped').mouseleave(function () {
       (0, _jQuery2['default'])(this).removeClass('flipped');
     });

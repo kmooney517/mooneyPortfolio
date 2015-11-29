@@ -1,13 +1,16 @@
 import $ from 'jQuery';
 
 let SkillsController = function($scope) {
-  
-  $('.flip').click(function(){
+
+  $('.flip').mouseenter(function(){
     $(this).find('.card').addClass('flipped').mouseleave(function(){
       $(this).removeClass('flipped');
     });
     return false;
   });
+
+
+
 
 };
 
