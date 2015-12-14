@@ -8471,18 +8471,34 @@ th.hide-for-touch {
   font-family: 'Architects Daughter', cursive; }
 
 .landing {
-  background: #333333;
-  margin-bottom: 0; }
+  background: url(../images/1080.jpeg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  width: 100%; }
   .landing .downButton .fa-angle-double-down {
     color: white;
-    margin: 2% 50%; }
+    position: absolute;
+    left: 50%;
+    bottom: 2%; }
+  .landing p {
+    font-family: 'Architects Daughter', cursive;
+    float: right;
+    text-align: right;
+    margin-right: 3%;
+    margin-top: 3%;
+    color: #333333;
+    font-weight: 900; }
 
 .about {
+  height: 100vh;
   margin-top: -5px;
   text-align: center;
-  background: #8AADAC; }
+  background: url(https://unsplash.it/1920/1080?image=812) no-repeat center center fixed; }
   .about span {
-    color: white;
+    color: #1197EB;
     font-weight: bold; }
   .about h1 {
     padding-top: 5%;
@@ -8490,26 +8506,30 @@ th.hide-for-touch {
   .about p {
     font-size: 1.2em;
     width: 65%;
-    margin: 2% auto; }
+    margin: 3% auto; }
   .about .non-code {
-    padding-top: 2%;
-    padding-bottom: 5%;
+    padding-top: 4%;
     border-top: 1px solid white; }
 
 .tiles {
   width: 95%;
   margin: 2% auto;
   position: relative; }
-  .tiles div {
+  .tiles .image-wrapper {
+    border-radius: 5px;
     background: #333333;
     display: inline-block;
     border: 1px solid black;
     width: 33%;
     height: 20em; }
 
+.upButton .fa-angle-double-up {
+  color: #333333;
+  margin: 0 50%; }
+
 @media only screen and (max-width: 1120px) {
   /* For mobile phones: */
-  .tiles div {
+  .tiles .image-wrapper {
     width: 100%;
     height: 15em; } }
 
@@ -8534,10 +8554,6 @@ th.hide-for-touch {
       margin-top: 1em;
       margin-bottom: 0;
       padding-bottom: 0; }
-
-.upButton .fa-angle-double-up {
-  color: #333333;
-  margin: 0 50%; }
 
 .bounce {
   animation: bounce 2s infinite;
@@ -8611,21 +8627,14 @@ th.hide-for-touch {
   opacity: 1; }
 
 .skillsTemplate {
-  background: #8AADAC;
-  width: 100%;
-  height: 100%; }
-  .skillsTemplate .boxImage {
-    width: 100%;
-    text-align: center;
-    color: white;
-    font-family: 'Architects Daughter', cursive;
-    font-size: 2em; }
-    .skillsTemplate .boxImage .toolkit {
-      padding: 2%;
-      width: 20%; }
+  background: url(https://images.unsplash.com/photo-1444076095244-6edf09c44c27?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=d10d636939b545b24ea22d57ffb29a16) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
   .skillsTemplate .circles {
     text-align: center;
-    margin-bottom: 1em; }
+    margin-bottom: 4em; }
     .skillsTemplate .circles p {
       color: #333333;
       font-size: 1.3em;
@@ -8639,6 +8648,8 @@ th.hide-for-touch {
   .skillsTemplate .circle {
     display: inline-block;
     border: 1px solid white;
+    background: gray;
+    opacity: .9;
     border-radius: 50%;
     width: 17em;
     height: 17em;
@@ -8702,16 +8713,20 @@ th.hide-for-touch {
   font-size: 2em;
   margin: 2%; }
   .backHome .fa-long-arrow-left {
-    color: #333333; }
+    color: white; }
     .backHome .fa-long-arrow-left:hover {
-      color: white; }
+      color: #008BBC; }
 
 @media all and (max-width: 1115px) and (min-width: 320px) {
   .projectsTemplate {
     text-align: center; } }
 
 .projectsTemplate {
-  background: #8AADAC;
+  background: url(https://images.unsplash.com/reserve/aOcWqRTfQ12uwr3wWevA_14401305508_804b300054_o.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=71187949290942235a22c9cd2f360d32) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   color: #333333;
   font-family: 'Architects Daughter', cursive; }
   .projectsTemplate .title {
@@ -8742,14 +8757,18 @@ th.hide-for-touch {
     margin-bottom: 0; }
 
 .resume {
-  background: #8AADAC; }
+  background: url(https://images.unsplash.com/photo-1415979733006-ec911cf8e6df?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=31d42c70c6856a63ed2593a4708e50c2) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 .accordion {
   width: 80%;
-  background: #8AADAC;
   padding-top: 2%;
   margin: 0 0 8% 5%; }
   .accordion h2 {
+    color: #e6e6e6;
     margin-left: 5%;
     width: 80%;
     text-align: center;
@@ -8764,6 +8783,9 @@ th.hide-for-touch {
     padding-right: 4em; }
 
 .contactInfo2 {
+  background: #cdcdcd;
+  border-radius: 5px;
+  opacity: .9;
   display: none;
   width: 80%;
   margin-left: 5%; }
@@ -8776,6 +8798,10 @@ th.hide-for-touch {
       color: white; }
 
 .contactMe {
+  background: #cdcdcd;
+  border-radius: 5px;
+  opacity: .9;
+  padding: 10px;
   float: right;
   margin-right: 6%;
   margin-top: 8%; }
@@ -8787,9 +8813,9 @@ th.hide-for-touch {
     border-radius: 3px;
     padding: 3%; }
   .contactMe a {
+    color: #333333;
     text-align: center;
-    text-decoration: none;
-    color: #333333; }
+    text-decoration: none; }
     .contactMe a:hover {
       color: white; }
 
@@ -8802,6 +8828,9 @@ th.hide-for-touch {
     margin-left: 4%;
     margin-right: 4%; }
     .accordion h2 {
+      background: #cdcdcd;
+      border-radius: 5px;
+      color: #333333;
       margin-left: 25%;
       width: 50%;
       font-size: 1.4em; }
