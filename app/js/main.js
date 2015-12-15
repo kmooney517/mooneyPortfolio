@@ -98,6 +98,8 @@ Object.defineProperty(exports, '__esModule', {
 var ResumeController = function ResumeController($scope) {
 
   $scope.oneAtATime = true;
+
+  $scope.isopen = false;
 };
 
 ResumeController.$inject = ['$scope'];

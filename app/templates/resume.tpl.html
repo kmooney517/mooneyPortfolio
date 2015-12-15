@@ -33,17 +33,17 @@
     <accordion close-others="oneAtATime">
 
 
-      <accordion-group is-open="true"> 
+      <accordion-group is-open="true" > 
 
-        <accordion-heading> Summary <i class="right" ng-class="{'fa fa-chevron-down': isopen, 'fa fa-chevron-down': !isopen}"></i>
+        <accordion-heading ng-click="isopen = !isopen"> Summary <i class="right" ng-class="{'fa fa-chevron-down': isopen, 'fa fa-chevron-down': !isopen}"></i>
         </accordion-heading>
 
         <p>Coming from a background in education, I have always been one to jump at learning something new. I made the switch to front end web development because of its' constant state of change and evolution. I believe that web development can offer me the opportunity to pursue new challenges and learning opportunities on a daily basis. I will complete the immersive front end engineering course at The Iron Yard mid-December and I am eager to take the next step on my adventure through web development.</p>
       </accordion-group>
 
 
-      <accordion-group> 
-        <accordion-heading>
+      <accordion-group > 
+        <accordion-heading ng-click="isopen = !isopen">
           Skills <i class="right" ng-class="{'fa fa-chevron-down': isopen, 'fa fa-chevron-right': !isopen}"></i>
         </accordion-heading> 
 
@@ -75,8 +75,8 @@
       </accordion-group>
 
 
-      <accordion-group>
-        <accordion-heading>
+      <accordion-group >
+        <accordion-heading ng-click="isopen = !isopen">
           Experience <i class="right" ng-class="{'fa fa-chevron-down': isopen, 'fa fa-chevron-right': !isopen}"></i>
         </accordion-heading>
         <div class="experience">
@@ -86,14 +86,14 @@
         </div>
       </accordion-group>
 
-      <accordion-group>
-        <accordion-heading>
+      <accordion-group >
+        <accordion-heading ng-click="isopen = !isopen">
             Education <i class="right" ng-class="{'fa fa-chevron-down': isopen, 'fa fa-chevron-right': !isopen}"></i>
         </accordion-heading>
 
         <div class="education">
         <p><strong>The Iron Yard, December 2015</strong><br><em>Front End Web Development</em></p>
-        <p><strong>The University of Georgia, 2018-2012</strong><br><em>BS-Education, Secondary Mathematics Education</em></p>
+        <p><strong>The University of Georgia, 2008-2012</strong><br><em>BS-Education, Secondary Mathematics Education</em></p>
         </div>
       </accordion-group>
     </accordion>
