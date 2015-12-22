@@ -90,32 +90,35 @@ exports['default'] = HomeController;
 module.exports = exports['default'];
 
 },{"jQuery":11}],3:[function(require,module,exports){
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
+Object.defineProperty(exports, "__esModule", {
   value: true
 });
-
 var ProjectController = function ProjectController() {
 
-  var vm = this;
+  // let vm = this;
 
-  vm.highlightProject = highlightProject;
-  vm.unHighlight = unHighlight;
+  // vm.highlightProject = highlightProject;
+  // vm.unHighlight = unHighlight;
 
-  function highlightProject() {
-    $('.projectTile').css('background', 'red');
-  }
+  // function highlightProject () {
+  //   angular.element();
 
-  function unHighlight() {
-    $('.projectTile').css('background', 'inherit');
-  }
+  // }
+
+  // function unHighlight () {
+  //   console.log('bye');
+  //   angular.element();
+
+  // }
+
 };
 
 ProjectController.$inject = [];
 
-exports['default'] = ProjectController;
-module.exports = exports['default'];
+exports["default"] = ProjectController;
+module.exports = exports["default"];
 
 },{}],4:[function(require,module,exports){
 'use strict';

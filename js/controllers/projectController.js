@@ -1,20 +1,20 @@
-
-
 let ProjectController = function() {
   
-  let vm = this;
+  // let vm = this;
 
-  vm.highlightProject = highlightProject;
-  vm.unHighlight = unHighlight;
+  // vm.highlightProject = highlightProject;
+  // vm.unHighlight = unHighlight;
 
-  function highlightProject () {
-    $('.projectTile').css('background', 'red');
-  }
+  // function highlightProject () {
+  //   angular.element();
+    
+  // }
 
-  function unHighlight () {
-    $('.projectTile').css('background', 'inherit');
+  // function unHighlight () {
+  //   console.log('bye');
+  //   angular.element();
 
-  }
+  // }
 
 };
 

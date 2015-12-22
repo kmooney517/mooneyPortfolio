@@ -4,6 +4,9 @@
 body{
   background: #B2B5AC;
 }
+p{
+  font-weight: 100;
+}
 
 @media all and (min-width: 960px) {
   body{
@@ -439,6 +442,7 @@ body{
   }
   .description{
     width: 65%;
+    font-weight: 100;
     h3{
       width: 100%;
       text-align: center;
