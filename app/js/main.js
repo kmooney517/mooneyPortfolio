@@ -22,7 +22,7 @@ var config = function config($stateProvider, $urlRouterProvider) {
     templateUrl: 'templates/skills.tpl.html'
   }).state('root.projects', {
     url: '/projects',
-    // controller: 'ProjectsController as vm',
+    controller: 'ProjectController as vm',
     templateUrl: 'templates/projects.tpl.html'
   }).state('root.resume', {
     url: '/resume',
@@ -89,7 +89,35 @@ HomeController.$inject = ['$scope', '$location', '$anchorScroll', '$rootScope', 
 exports['default'] = HomeController;
 module.exports = exports['default'];
 
-},{"jQuery":10}],3:[function(require,module,exports){
+},{"jQuery":11}],3:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, '__esModule', {
+  value: true
+});
+
+var ProjectController = function ProjectController() {
+
+  var vm = this;
+
+  vm.highlightProject = highlightProject;
+  vm.unHighlight = unHighlight;
+
+  function highlightProject() {
+    $('.projectTile').css('background', 'red');
+  }
+
+  function unHighlight() {
+    $('.projectTile').css('background', 'inherit');
+  }
+};
+
+ProjectController.$inject = [];
+
+exports['default'] = ProjectController;
+module.exports = exports['default'];
+
+},{}],4:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, '__esModule', {
@@ -107,7 +135,7 @@ ResumeController.$inject = ['$scope'];
 exports['default'] = ResumeController;
 module.exports = exports['default'];
 
-},{}],4:[function(require,module,exports){
+},{}],5:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, '__esModule', {
@@ -135,7 +163,7 @@ SkillsController.$inject = ['$scope'];
 exports['default'] = SkillsController;
 module.exports = exports['default'];
 
-},{"jQuery":10}],5:[function(require,module,exports){
+},{"jQuery":11}],6:[function(require,module,exports){
 'use strict';
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
@@ -160,6 +188,10 @@ var _controllersHomeController = require('./controllers/homeController');
 
 var _controllersHomeController2 = _interopRequireDefault(_controllersHomeController);
 
+var _controllersProjectController = require('./controllers/projectController');
+
+var _controllersProjectController2 = _interopRequireDefault(_controllersProjectController);
+
 var _controllersSkillsController = require('./controllers/skillsController');
 
 var _controllersSkillsController2 = _interopRequireDefault(_controllersSkillsController);
@@ -168,9 +200,9 @@ var _controllersResumeController = require('./controllers/resumeController');
 
 var _controllersResumeController2 = _interopRequireDefault(_controllersResumeController);
 
-_angular2['default'].module('app', ['ui.router', 'mm.foundation']).config(_config2['default']).controller('HomeController', _controllersHomeController2['default']).controller('SkillsController', _controllersSkillsController2['default']).controller('ResumeController', _controllersResumeController2['default']);
+_angular2['default'].module('app', ['ui.router', 'mm.foundation']).config(_config2['default']).controller('HomeController', _controllersHomeController2['default']).controller('ProjectController', _controllersProjectController2['default']).controller('SkillsController', _controllersSkillsController2['default']).controller('ResumeController', _controllersResumeController2['default']);
 
-},{"./config":1,"./controllers/homeController":2,"./controllers/resumeController":3,"./controllers/skillsController":4,"angular":9,"angular-foundation":6,"angular-ui-router":7,"jQuery":10}],6:[function(require,module,exports){
+},{"./config":1,"./controllers/homeController":2,"./controllers/projectController":3,"./controllers/resumeController":4,"./controllers/skillsController":5,"angular":10,"angular-foundation":7,"angular-ui-router":8,"jQuery":11}],7:[function(require,module,exports){
 /*
  * angular-mm-foundation
  * http://pineconellc.github.io/angular-foundation/
@@ -3786,7 +3818,7 @@ angular.module("template/typeahead/typeahead-popup.html", []).run(["$templateCac
     "");
 }]);
 
-},{}],7:[function(require,module,exports){
+},{}],8:[function(require,module,exports){
 /**
  * State-based routing for AngularJS
  * @version v0.2.15
@@ -8157,7 +8189,7 @@ angular.module('ui.router.state')
   .filter('isState', $IsStateFilter)
   .filter('includedByState', $IncludedByStateFilter);
 })(window, window.angular);
-},{}],8:[function(require,module,exports){
+},{}],9:[function(require,module,exports){
 /**
  * @license AngularJS v1.4.8
  * (c) 2010-2015 Google, Inc. http://angularjs.org
@@ -37176,11 +37208,11 @@ $provide.value("$locale", {
 })(window, document);
 
 !window.angular.$$csp().noInlineStyle && window.angular.element(document.head).prepend('<style type="text/css">@charset "UTF-8";[ng\\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>');
-},{}],9:[function(require,module,exports){
+},{}],10:[function(require,module,exports){
 require('./angular');
 module.exports = angular;
 
-},{"./angular":8}],10:[function(require,module,exports){
+},{"./angular":9}],11:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v2.1.4
  * http://jquery.com/
@@ -46392,7 +46424,7 @@ return jQuery;
 
 }));
 
-},{}]},{},[5])
+},{}]},{},[6])
 
 
 //# sourceMappingURL=main.js.map

@@ -8778,17 +8778,21 @@ body {
 .accordion {
   width: 80%;
   padding-top: 2%;
-  margin: 0 0 8% 5%; }
+  margin: 0 0 8% 5%;
+  font-weight: 100; }
   .accordion h2 {
     color: #e6e6e6;
     margin-left: 5%;
     width: 80%;
     text-align: center;
-    font-size: 1.4em; }
+    font-size: 1.4em;
+    font-weight: 100; }
   .accordion span.ng-scope {
     color: #333333;
     font-size: 1.3em;
-    font-family: 'Architects Daughter', cursive; }
+    font-weight: 200; }
+  .accordion p {
+    font-weight: 100; }
   .accordion ul {
     list-style: none;
     display: inline-block;
@@ -8814,22 +8818,29 @@ body {
   border-radius: 5px;
   opacity: .9;
   padding: 10px;
-  float: right;
   margin-right: 6%;
-  margin-top: 8%; }
+  margin-top: 8%;
+  font-weight: 100;
+  position: fixed;
+  right: 0; }
+  .contactMe h3 {
+    font-weight: 100; }
   .contactMe i {
     padding-right: 1em; }
   .contactMe ul {
     list-style: none;
     border: 1px solid white;
     border-radius: 3px;
-    padding: 3%; }
+    padding: 3%;
+    margin-left: 0; }
   .contactMe a {
     color: #333333;
     text-align: center;
     text-decoration: none; }
     .contactMe a:hover {
       color: white; }
+    .contactMe ap {
+      font-weight: 100; }
 
 @media all and (max-width: 1115px) and (min-width: 320px) {
   .contactMe {

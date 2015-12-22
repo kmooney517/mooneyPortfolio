@@ -20,7 +20,7 @@ let config = function($stateProvider, $urlRouterProvider) {
     })
     .state('root.projects', {
       url: '/projects',
-      // controller: 'ProjectsController as vm',
+      controller: 'ProjectController as vm',
       templateUrl: 'templates/projects.tpl.html',
     })
     .state('root.resume', {

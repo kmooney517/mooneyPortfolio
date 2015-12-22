@@ -463,17 +463,22 @@ body{
   width: 80%;
   padding-top: 2%;
   margin: 0 0 8% 5%;
+  font-weight: 100;
   h2{
     color: darken(white, 10%);
     margin-left: 5%;
     width: 80%;
     text-align: center;
-    font-size: 1.4em
+    font-size: 1.4em;
+    font-weight: 100;
   }
   span.ng-scope{
     color: #333333;
     font-size: 1.3em;
-    font-family: 'Architects Daughter', cursive;
+    font-weight: 200;
+  }
+  p{
+    font-weight: 100;
   }
   ul{
     list-style: none;
@@ -508,9 +513,14 @@ body{
   border-radius: 5px;
   opacity: .9;
   padding: 10px;
-  float: right;
   margin-right: 6%;
   margin-top: 8%;
+  font-weight: 100;
+  position: fixed;
+  right: 0;
+  h3{
+    font-weight: 100;
+  }
   i{
     padding-right: 1em;
   }
@@ -519,6 +529,7 @@ body{
     border: 1px solid white;
     border-radius: 3px;
     padding: 3%;
+    margin-left: 0;
   }
   a{
     color: #333333;
@@ -526,6 +537,9 @@ body{
     text-decoration: none;
     &:hover{
       color: white;
+    }
+    &p{
+      font-weight: 100;
     }
   }
 
