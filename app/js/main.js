@@ -130,7 +130,7 @@ var ResumeController = function ResumeController($scope) {
 
   $scope.oneAtATime = true;
 
-  $scope.isopen = false;
+  $scope.isopen = true;
 };
 
 ResumeController.$inject = ['$scope'];

@@ -8652,7 +8652,7 @@ p {
     .skillsTemplate .circles p {
       color: #333333;
       font-size: 1.3em;
-      font-family: 'Architects Daughter', cursive; }
+      font-weight: 100; }
     .skillsTemplate .circles .back p {
       color: white;
       font-size: 1em;
