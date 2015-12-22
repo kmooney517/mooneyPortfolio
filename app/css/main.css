@@ -8407,6 +8407,9 @@ th.hide-for-touch {
 .fa-fonticons:before {
   content: ""; }
 
+body {
+  background: #B2B5AC; }
+
 @media all and (min-width: 960px) {
   body {
     font-size: 18px; } }
@@ -8436,21 +8439,22 @@ th.hide-for-touch {
   color: #007AB9; }
 
 .title-area li.name h1 a {
-  font-family: 'Architects Daughter', cursive;
   color: white;
-  font-size: 1.4em; }
+  font-size: 1.2em;
+  font-weight: 100; }
 
 .dropDown {
   display: none;
-  text-align: center; }
+  text-align: center;
+  font-weight: 100; }
   .dropDown.ng-scope {
     margin-left: 0;
     margin-bottom: 0; }
   .dropDown li {
     padding: 0;
-    background: #94BDBE;
+    background: #b3b3b3;
     list-style: none;
-    border-bottom: 1px solid white; }
+    border-bottom: 1px dotted #333333; }
   .dropDown a {
     text-decoration: none;
     color: #333333; }
@@ -8468,7 +8472,7 @@ th.hide-for-touch {
   color: #8AADAC; }
 
 .contact {
-  font-family: 'Architects Daughter', cursive; }
+  font-weight: 100; }
 
 .landing {
   background: url(../images/1080.jpeg) no-repeat center center fixed;
@@ -8484,13 +8488,12 @@ th.hide-for-touch {
     left: 50%;
     bottom: 2%; }
   .landing p {
-    font-family: 'Architects Daughter', cursive;
     float: right;
     text-align: right;
     margin-right: 3%;
     margin-top: 3%;
     color: #333333;
-    font-weight: 900; }
+    font-weight: 200; }
 
 .about {
   height: 100vh;
@@ -8498,13 +8501,13 @@ th.hide-for-touch {
   text-align: center;
   background: url(https://unsplash.it/1920/1080?image=812) no-repeat center center fixed; }
   .about span {
-    color: #1197EB;
-    font-weight: bold; }
+    color: #1197EB; }
   .about h1 {
     padding-top: 5%;
     font-family: 'Architects Daughter', cursive; }
   .about p {
     font-size: 1.2em;
+    font-weight: 100;
     width: 65%;
     margin: 3% auto; }
   .about .non-code {
@@ -8537,11 +8540,16 @@ th.hide-for-touch {
   height: 3.4em;
   width: 100%;
   color: white;
-  font-family: 'Architects Daughter', cursive;
   background-color: #333333; }
+  .footer i {
+    color: white;
+    padding-left: 20px;
+    font-size: 1.1em; }
   .footer .footerLeft p {
-    padding-left: 3%;
+    font-weight: 100;
+    padding-left: 1.6%;
     float: left;
+    font-size: 1.2em;
     margin: 1em 0 0 0;
     padding-bottom: 0; }
   .footer .contact {
@@ -8550,6 +8558,7 @@ th.hide-for-touch {
       float: right;
       padding-right: 2%; }
     .footer .contact li {
+      color: white;
       display: inline-block;
       margin-top: 1em;
       margin-bottom: 0;
@@ -8598,7 +8607,7 @@ th.hide-for-touch {
   position: relative;
   text-align: center; }
   .image-wrapper p {
-    font-family: 'Architects Daughter', cursive;
+    font-weight: 100;
     margin-bottom: 1%; }
   .image-wrapper img {
     max-width: 100%;
@@ -8615,11 +8624,13 @@ th.hide-for-touch {
 
 .overlay-fade-in p {
   color: white;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  font-weight: 100; }
 
 .overlay-fade-in .image-overlay-content {
   border: none;
   opacity: 0;
+  font-weight: 100;
   transition: all 0.4s ease-in-out; }
 
 .overlay-fade-in:hover .image-overlay-content {
@@ -8728,11 +8739,12 @@ th.hide-for-touch {
   -o-background-size: cover;
   background-size: cover;
   color: #333333;
-  font-family: 'Architects Daughter', cursive; }
+  font-weight: 100; }
   .projectsTemplate .title {
     text-align: center;
     font-size: 2em;
-    padding: 2%; }
+    padding: 2%;
+    font-weight: 100; }
   .projectsTemplate img {
     margin: 1%;
     width: 20em;
