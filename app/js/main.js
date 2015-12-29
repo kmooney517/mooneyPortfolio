@@ -97,7 +97,13 @@ Object.defineProperty(exports, "__esModule", {
 });
 var ProjectController = function ProjectController() {
 
-  // let vm = this;
+  var vm = this;
+  vm.scrollTop = scrollTop;
+
+  function scrollTop() {
+    window.scrollTo(0, 0);
+  }
+  scrollTop();
 
   // vm.highlightProject = highlightProject;
   // vm.unHighlight = unHighlight;
@@ -112,7 +118,6 @@ var ProjectController = function ProjectController() {
   //   angular.element();
 
   // }
-
 };
 
 ProjectController.$inject = [];
@@ -131,6 +136,14 @@ var ResumeController = function ResumeController($scope) {
   $scope.oneAtATime = true;
 
   $scope.isopen = true;
+
+  var vm = this;
+  vm.scrollTop = scrollTop;
+
+  function scrollTop() {
+    window.scrollTo(0, 0);
+  }
+  scrollTop();
 };
 
 ResumeController.$inject = ['$scope'];

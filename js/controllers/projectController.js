@@ -1,6 +1,13 @@
 let ProjectController = function() {
   
-  // let vm = this;
+  let vm = this;
+  vm.scrollTop = scrollTop;
+
+
+  function scrollTop () {
+    window.scrollTo(0, 0);
+  }
+  scrollTop();
 
   // vm.highlightProject = highlightProject;
   // vm.unHighlight = unHighlight;
