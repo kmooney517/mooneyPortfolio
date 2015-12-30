@@ -15,44 +15,36 @@
   <a id="bottom"></a>
 
   <div class="about">
-    <h1>Explore Life</h1>
+    <h1>About</h1>
     <p>I'm Kevin, a <span>front end web developer</span>, constantly looking for something new to explore.  When in front of a computer, I enjoy creating simple and functional web applications with HTML, CSS, and JS.  JavaScript is a living language that is in a constant state of evolution - the explorations are endless!</p>
 
     <p class="non-code">While away from my computer, you can find me exploring the rivers and mountains of the southeast, playing a game of ultimate frisbee, or being snobby about a craft beer that you have never heard of.</p>
   </div>
 
-  <div class="aroundTiles">
-    <div class="tiles">
+    <div class="tiles row">
    
-      <a href="#/skills"><div class="image-wrapper overlay-fade-in">
+      <a href="#/skills"><div class="medium-4 columns">
         <p class="title">Tools</p>
-        <img ng-src="../images/html-css-js-logos.png" />
-        <div class="image-overlay-content">
-          <a href="#/skills">Show Current Toolkit</a>
-        </div>
+        <img class="skillsImg" ng-src="../images/html-css-js-logos.png" />
+  
       </div></a>
 
-      <a href="#/projects"><div class="image-wrapper overlay-fade-in">
-        <p class="title">Current Projects</p>
+      <a href="#/projects"><div class="medium-4 columns middleColumn">
+        <p class="title">Projects</p>
         <img class="currentProjects" src="../images/projectThumbs.png" />
-        <div class="image-overlay-content">
-          <a class="projectLink" href="#/projects">Show Current Projects</a>
-        </div>
+
       </div></a>
 
-      <a href="#/resume"><div class="image-wrapper overlay-fade-in">
+      <a href="#/resume"><div class="medium-4 columns">
         <p class="title">Resume</p>
-        <img class ="showResume"src="../images/fakeResume2.png" />
-        <div class="image-overlay-content">
-          <a href="#/resume">Show Current Resume</a>
-        </div>
+        <img class ="showResume" src="../images/fakeResume2.png" />
+
       </div></a>
 
       <div class="upButton">
         <i class="fa fa-angle-double-up fa-3x bounce" ng-click="vm.scrollUp()"></i>
       </div>
     </div>
-  </div>
 
 
 

@@ -126,7 +126,8 @@ p{
   text-align: center;
   background: url(https://unsplash.it/1920/1080?image=812) no-repeat center center fixed;
   span{
-    color: #1197EB;
+    color: white;
+    font-weight: 500;
   }
   h1{
     padding-top: 5%;
@@ -145,36 +146,54 @@ p{
 }
 
 
-.tiles {
-  width: 95%;
-  margin: 2% auto;
 
-  position: relative;
-  .image-wrapper{
-    border-radius: 5px;
-    background: #333333;
-    display: inline-block;
-    border: 1px solid black;
-    width: 33%;
-    height: 20em;
+
+div.tiles.row{
+  max-width: 100%;
+  a{
+    color: inherit;
+  }
+}
+.tiles {
+  background: url(https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=067f0b097deff88a789e125210406ffe) no-repeat center center fixed;
+  .middleColumn{
+    border-right: 1px dotted #D4D3D1;
+    border-left: 1px dotted #D4D3D1;
+  }
+  .medium-4{
+    text-align: center;
+    height: 80%;
+    margin-top: 1%;
+    border-radius: 2px;
+    &:hover{
+      background: #97A9B4;
+      transition: 2s ease;
+    }
+    img{
+      width: 65%;
+      padding-bottom: 2%;
+    }
+    img.currentProjects{
+      width: 100%;
+
+    }
+    img.skillsImg{
+      width: 90%;
+    }
+  }
+  .title{
+    margin-top: 5%;
+    font-size: 1em;
+    font-weight: 400;
   }
 }
 
 .upButton{
+  padding-top: 25%;
   .fa-angle-double-up{
     color: #333333;
     margin: 0 50%;
   }
-}
-
-
-
-@media only screen and (max-width: 1120px) {
-    /* For mobile phones: */
-    .tiles .image-wrapper{
-        width: 100%;
-        height: 15em;
-    }
 }
 
 .footer {
