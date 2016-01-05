@@ -8489,7 +8489,8 @@ p {
     color: white;
     position: absolute;
     left: 50%;
-    bottom: 2%; }
+    bottom: 2%;
+    cursor: pointer; }
   .landing p {
     float: right;
     text-align: right;
@@ -8552,7 +8553,8 @@ div.tiles.row {
   padding-top: 25%; }
   .upButton .fa-angle-double-up {
     color: #333333;
-    margin: 0 50%; }
+    margin: 0 50%;
+    cursor: pointer; }
 
 .footer {
   height: 3.4em;
@@ -8709,20 +8711,33 @@ div.tiles.row {
 
 .flip {
   -webkit-perspective: 800;
+  -moz-perspective: 800;
+  -o-perspective: 800;
   position: relative;
   margin: 50px auto; }
 
 .flip .card.flipped {
-  -webkit-transform: rotatey(-180deg); }
+  -webkit-transform: rotatey(-180deg);
+  -moz-transform: rotatey(-180deg);
+  -o-transform: rotatey(-180deg); }
+
+.hide {
+  display: none; }
 
 .flip .card {
   width: 100%;
   height: 100%;
   -webkit-transform-style: preserve-3d;
-  -webkit-transition: 1s; }
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -o-transition: 1s; }
 
 .flip .card .face {
   -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -8735,6 +8750,8 @@ div.tiles.row {
 
 .flip .card .back {
   -webkit-transform: rotatey(-180deg);
+  -moz-transform: rotatey(-180deg);
+  -o-transform: rotatey(-180deg);
   cursor: pointer; }
 
 .backHome {
